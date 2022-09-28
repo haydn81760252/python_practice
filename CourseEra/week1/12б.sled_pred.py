@@ -1,0 +1,5 @@
+chislo = int(input())
+print('The next number for the number ', chislo, end='')
+print(' is ', chislo + 1, '.', sep='')
+print('The previous number for the number ', chislo, end='')
+print(' is ', chislo - 1, '.', sep='')

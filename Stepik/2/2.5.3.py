@@ -1,0 +1,2 @@
+mesto = int(input())
+
