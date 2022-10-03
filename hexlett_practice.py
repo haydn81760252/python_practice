@@ -1,9 +1,9 @@
-stark = 'Arya'
+# stark = 'Arya'
 
 # BEGIN (write your solution here)
-text = f'''Do you want to eat, {stark}?
-Yes, I'm hungry, mom.'''
-print(text)
+# text = f'''Do you want to eat, {stark}?
+# Yes, I'm hungry, mom.'''
+# print(text)
 
 #
 #
@@ -36,10 +36,10 @@ print(text)
 # print(name[1:5].upper().find('I'))
 
 
-text = 'When \t\n you play a \t\n game of thrones you win or you die.'
-
-# BEGIN (write your solution here)
-print(len(text[5:16].strip()))
+# text = 'When \t\n you play a \t\n game of thrones you win or you die.'
+#
+# # BEGIN (write your solution here)
+# print(len(text[5:16].strip()))
 
 
 # END
@@ -49,21 +49,63 @@ print(len(text[5:16].strip()))
 #     return 5
 #     return 10
 #
+# #
+# # # Что будет выведено на экран?
+# # print(run())
 #
-# # Что будет выведено на экран?
-# print(run())
+#
+# def get_last_char(text):
+#     return text[-1]
+#
+#
+# print(get_last_char('Chaos'))
+#
+#
+# def truncate(string, number):
+#     stroka = (string[:number]) + '...'
+#     return stroka
+#
+# stroka = input("Введите строку для обрезки:\n")
+# print(truncate(stroka, 2))
 
 
-def get_last_char(text):
-    return text[-1]
+# # Кредитка передается внутрь как строка
+# get_hidden_card('2034399002121100', 1)  # "*1100"
+#
+# get_hidden_card('123456781234567', 2)  # "**5678"
+#
+# get_hidden_card('1234567812345678', 3)  # "***5678"
+#
+# get_hidden_card('1234567812345678')     # "****5678"
+#
+# card_number = '1234123412341234'
 
+#
+# # number_of_digits = 10
+# def get_hidden_card(card_number, number_of_digits=4):
+# #    result = '*' * number_of_digits + card_number[12:16]
+#     result = '*' * number_of_digits + card_number[:4]
+#     return result
+#
+#
+# print(get_hidden_card(card_number))
 
-print(get_last_char('Chaos'))
+text = 'python'
+#
+# trim_and_repeat(text, offset=3, repetitions=2)  # honhon
+#
+# trim_and_repeat(text, repetitions=3)  # pythonpythonpython
+#
+# trim_and_repeat(text)  # python
 
+# def trim_and_repeat(text, offset=0, repetitions=1):
+#     return text[offset:] * repetitions
+#     #return result
+#
+# print(trim_and_repeat(text))
 
-def truncate(string, number):
-    stroka = (string[:number]) + '...'
-    return stroka
+def get_age_difference(age1, age2):
+ #   result = 'The age difference is ' + str(age2 - age1)
+    return 'The age difference is ' + str(age2 - age1)
 
-stroka = input("Введите строку для обрезки:\n")
-print(truncate(stroka, 2))
+print(get_age_difference(2017, 2021))
