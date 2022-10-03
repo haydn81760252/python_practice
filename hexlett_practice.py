@@ -91,6 +91,8 @@
 # print(get_hidden_card(card_number))
 
 text = 'python'
+
+
 #
 # trim_and_repeat(text, offset=3, repetitions=2)  # honhon
 #
@@ -104,8 +106,44 @@ text = 'python'
 #
 # print(trim_and_repeat(text))
 
-def get_age_difference(age1, age2):
- #   result = 'The age difference is ' + str(age2 - age1)
-    return 'The age difference is ' + str(age2 - age1)
+# def get_age_difference(age1, age2):
+#  #   result = 'The age difference is ' + str(age2 - age1)
+#     return 'The age difference is ' + str(abs(age2 - age1))
+#
+# print(get_age_difference(2020, 2010))
 
-print(get_age_difference(2017, 2021))
+# def has_upper_case(string):
+#     return string != string.lower()
+#
+# print(has_upper_case('Hexlet'))
+
+# def is_leap_year(year):
+#     return year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)
+#
+# print(is_leap_year(2018))
+
+
+# def string_or_not(value):
+#     return isinstance(value, str) and 'Yes' or 'No'
+#
+# print(string_or_not(3))
+
+
+def normalize_url(url):
+    http_string = url[:7]
+    if http_string == 'https:/':
+        http_string_normal = url
+    elif http_string == 'http://':
+         http_string_normal = 'https://' + url[7:]
+    else:
+        http_string_normal = 'https://' + url
+    return http_string_normal
+
+    'https://' + url[7:] if url[:7] == 'https:/' else 'https://' + url:
+
+
+# print(normalize_url('https://ya.ru'))
+# print(normalize_url('google.com'))
+# print(normalize_url('http://ai.fi'))
+#
+# print(normalize_url('https://yandex.ru'))
