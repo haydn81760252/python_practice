@@ -128,18 +128,18 @@ text = 'python'
 #
 # print(string_or_not(3))
 
-
-def normalize_url(url):
-    http_string = url[:7]
-    if http_string == 'https:/':
-        http_string_normal = url
-    elif http_string == 'http://':
-         http_string_normal = 'https://' + url[7:]
-    else:
-        http_string_normal = 'https://' + url
-    return http_string_normal
-
-    'https://' + url[7:] if url[:7] == 'https:/' else 'https://' + url:
+#
+# def normalize_url(url):
+#     http_string = url[:7]
+#     if http_string == 'https:/':
+#         http_string_normal = url
+#     elif http_string == 'http://':
+#          http_string_normal = 'https://' + url[7:]
+#     else:
+#         http_string_normal = 'https://' + url
+#     return http_string_normal
+#
+#     'https://' + url[7:] if url[:7] == 'https:/' else 'https://' + url:
 
 
 # print(normalize_url('https://ya.ru'))
@@ -147,3 +147,91 @@ def normalize_url(url):
 # print(normalize_url('http://ai.fi'))
 #
 # print(normalize_url('https://yandex.ru'))
+#
+# a = 4
+# a -= 8 - a
+#
+# print(a)
+#
+# a = 5
+#
+# a -= 4
+#
+# a += 1
+#
+# print(a)
+
+
+# print_numbers(4)
+
+# => 4
+# => 3
+# => 2
+# => 1
+# => finished!
+
+# def print_numbers(number):
+#     counter = number
+#     while counter >= 1:
+#         print(counter)
+#         counter -= 1
+#     print('finished!')
+#
+# print(print_numbers(4))
+#
+#
+# join_numbers_from_range(1, 1)  # '1'
+# join_numbers_from_range(2, 3)  # '23'
+# join_numbers_from_range(5, 10)  # '5678910'
+
+# def join_numbers_from_range(start, finish):
+#     i = start
+#     result = ''
+#     while i <= finish:
+#         result += str(i)
+#         i += 1
+#     return result
+#
+# # print(join_numbers_from_range(5,10))
+#
+# text = 'Haydn'
+# print(text[::-1])
+
+
+# string = 'If I look back I am lost'
+# print(my_substr(string, 1))  # => 'I'
+# print(my_substr(string, 7))  # => 'If I lo'
+
+# def my_substr(string, count):
+#     i = 0
+#     one_char = string
+#     result_string = ''
+#     while i < count:
+#         result_string += one_char[i]
+#         i += 1
+#     return result_string
+#
+# string = 'If I look back I am lost'
+# print(my_substr(string, 7))
+
+# def is_contains_char(string, char):
+#     string_low, char_low = string.lower(), char.lower()
+#     i = 0
+#     while i < len(string):
+#         #         if char_low == string_low[i]:
+#         if char.lower() == string[i].lower():
+#             return True
+#         i += 1
+#     return False
+#
+#
+# # print(is_contains_char('Hexlet', 'H'))
+# print(is_contains_char('Awesomeness', 'm'))
+
+def sum(numbers):
+    result = 0
+    for num in numbers:
+        result += int(num)
+    return result
+
+print(sum("12345"))
