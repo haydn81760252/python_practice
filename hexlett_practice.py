@@ -228,10 +228,78 @@ text = 'python'
 # # print(is_contains_char('Hexlet', 'H'))
 # print(is_contains_char('Awesomeness', 'm'))
 
-def sum(numbers):
-    result = 0
-    for num in numbers:
-        result += int(num)
+# def sum(numbers):
+#     result = 0
+#     for num in numbers:
+#         result += int(num)
+#     return result
+#
+# print(sum("12345"))
+
+
+# def filter_string(string, char):
+#     result_string = ''
+#     for i in string:
+#         if char.lower() == i.lower():
+#             continue
+#         result_string += i
+#     return result_string.strip()
+#
+#
+# text1 = 'If I look forward I win'
+# print(filter_string(text1, 'O'))
+
+
+# def is_palindrome(string):
+#     string_wout_spaces = string.replace(' ', '')
+#     string_reversed = string_wout_spaces[::-1]
+#     if string_wout_spaces == string_reversed:
+#         result = True
+#     else:
+#         result = False
+#     return result
+#
+# print(is_palindrome('abs'))
+
+# from symbols import is_vowel()
+# def is_vowel(char):
+#     vowels = 'aeiouyауоыиэяюёе'
+#     return char.lower() in vowels
+#
+#
+# def count_vowels(string):
+#     result = 0
+#     for char in string:
+#         if is_vowel(char.lower()):
+#             result += 1
+#     return result
+#
+#
+# print(count_vowels('London is the capital of Great Britain'))
+
+# from random import choice
+#
+# def choice_from_range(string, start_index, finish_index):
+#     #random_index = randint(0, len(string - 1))
+#     #result_string = string[start_index:finish_index]
+#     #print(result_string)
+#     #return choice(result_string)
+#     return choice(string[start_index:finish_index])
+#
+# text = "abcdef"
+#
+# print(choice_from_range(text, 3, 5))  # d
+
+#Реализуйте функцию sort_pair, которая принимает пару (кортеж из двух значений) и возвращает пару,
+#значения которой расположены строго в порядке возрастания.
+
+def sort_pair(data):
+    (one, two) = data
+    result = data
+    if one > two:
+        result = (two, one)
+
     return result
 
-print(sum("12345"))
+print(sort_pair((10 , 8)))
+
